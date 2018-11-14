@@ -42,10 +42,8 @@ while run:
                 print('up stop')
             if event.key == pygame.K_DOWN  or event.key == ord('s'):
                 print('down stop')
-		if event.type == pygame.
+	if event.type == MOUSEBUTTONDOWN:
+		print(event.button)
+		
+#If I left/right click I want bullets to come out of my character
                 
-        if event.type == 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT():
-            run = False
-           
