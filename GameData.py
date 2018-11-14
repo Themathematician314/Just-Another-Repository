@@ -3,12 +3,6 @@ import math
 from random import randint
 import sys
 
-pygame.init()
-size = width, height = 1500, 1500;
-
-#Full screen
-
-
 """This class stores all the random elements in the game that I can think of. Of course, there will be more random elements, however this should suffice for now."""
 class Random_Elements:
 
@@ -170,7 +164,7 @@ class Atago(Character):
         pygame.sprite.Sprite.update()
         
         
-#Kinda Stuck here Gonna read super classes
+#Kinda Stuck here Gonna have to read on how to use super classes
 class Basic_Enemy(Character):
     super.__init()
 
@@ -181,40 +175,3 @@ class Bullets(pygame.sprite.Sprite):
 
         self.image = pygame.Surface[(15, 15)]
         
-#Movement in game.
-while main == True:
-    #This part closes the game
-    for event in pygame.event.get():
-        #This part is the movement of the character (You can hold buttons and shit too)
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT or event.key == ord('a'):
-                print('left')
-            if event.key == pygame.K_RIGHT or event.key == ord('d'):
-                print('right')
-            if event.key == pygame.K_UP or event.key == ord('w'):
-                print('up')
-            if event.key == pygame.K_DOWN or event.key == ord('s'):
-                print('down')
-        if event.type == pygame.KEYUP:
-            if event.key == pygame.K_LEFT or event.key == ord('a'):
-                print('left stop')
-            if event.key == pygame.K_RIGHT or event.key == ord('d'):
-                print('right stop')
-            if event.key == pygame.K_UP or event.key == ord('w'):
-                print('up stop')
-            if event.key == pygame.K_DOWN  or event.key == ord('s'):
-                print('down stop')
-            if event.key == ord('q'):
-                pygame.quit()
-                sys.exit()
-                main = False
-
-        if event.type == 
-
-
-    #You can quit the game. This should be the last statment here
-    if event.type == pygame.QUIT:
-            pygame.quit(); sys.exit()
-            main = False
-
-    i
