@@ -2,6 +2,22 @@ import pygame
 import math
 from random import randint
 import sys
+import os
+
+#I need to make a setup Area, where the world will take place
+
+#Initialize Pygame
+pygame.init()
+#Set the size of the window of the game
+win = pygame.pygame.display.set_mode((800, 800))
+pygame.display.set_caption('Atago.')
+#This is the size of Atago
+x = 50
+y = 50
+width, height = 40, 60
+velocity = 5 #(Movement speed can increase with power ups) Base movement is fixed for all characters
+
+#This is the Classes Area
 
 """This class stores all the random elements in the game that I can think of. Of course, there will be more random elements, however this should suffice for now."""
 class Random_Elements:
@@ -146,15 +162,14 @@ class Character():
         #Harder opponents such as semi_basic_Enemy have 4 attacks to kill.
         #Boss takes 30 shots to kill.
         #Defense for basic is 10. So they take 10% less damage. Basic enemy will have 180 hp
-        #Defense for Semi_basic_Enemy is 350
-
+        #Defense for Semi_basic_Enemy is 350   
+        
+    #This function will update as you take damage
     def stat_returner(self):
         return health
         return attack
         return defense
         return movement_speed
-
-    def 
     
 class Atago(Character):
     def __init__(self):
